@@ -49,7 +49,7 @@ We create and object which then allows us to test and call in the methods, when 
 
 ![image](https://user-images.githubusercontent.com/77361838/157615207-71ba762c-5d2e-4154-9c77-e372ea49f945.png)
 
-This will display the expected output:
+This will display the expected output:<br>
 <code>Name: Manjil</code><br>
 <code>ID: 1</code><br>
 <code>Registerd: Car is registered in the system</code><br>
