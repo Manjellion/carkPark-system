@@ -57,7 +57,7 @@ This will display the expected output:<br>
 
 ## 3.2 The <code>parkedCarList</code> Class
 
-When making a collection class we must think of the most suitable, for <code>parkedCarList</code> the most suitable was set and heres why:
+When making a collection class we must think of the most suitable, for <code>parkedCarList</code> the most suitable was set (specifically HashSet) and heres why:
 
   - There is no specific order of the elements(Cars).
   - Each car can be in the parking only once.
@@ -67,7 +67,46 @@ Here some reasons why other Java Data strucutres such as List, Queue and Stack a
   - Queue: Next element to be deleted is not necessarily the first that has been added.
   - Stack: Next element to be deleted is typicaly not the last that has been added.
 
+More specifically we will be using HashSet and heres why:
+  - HashSet stores the elements using a mechanism called <code>hashing</code>.
+  - HashSet contains unique elements only, allows us to prevent duplicates more easily, how, because it will give unique a key that will hold as its unique identifier.
+  - HashSet allows null values, this means we can insert null values even to index values with no object.
+
 For our <code>parkedCarList</code> we also inclded a constant MAX allowing us to record a maximum number of records we would like in our set data strucuture, As max is a constant type its a <code>+</code> symbol given public visibility. 
+
+As well as a constructor, there are methods to add new cars, remove them, view full HashSet, view the total and a toString method for an easy of unit testing as its overridden. 
+Below there is the code for parkedCarList:
+
+![image](https://user-images.githubusercontent.com/77361838/157635352-5771bac5-6700-48d0-abb7-caed6c9c9145.png)
+
+1. First you must import the Set collection framework from the <code>java.util.*</code>, the <code>*</code> is a selector for all too make things easier, however in production base its better to use just import the required framework to prevent problems with bottle necking. 
+
+![image](https://user-images.githubusercontent.com/77361838/157636031-a5f87210-4774-4ff6-b8b6-fc94048a7283.png)
+
+2. We make a HashSet using the Set to store a collection in the pSet variable. We also want to set our constant value MAX which will be public to record the maximum number of cars to be recorded into the HashSet. 
+
+![image](https://user-images.githubusercontent.com/77361838/157636399-9d30efd6-0e56-424f-9720-e31323d0b0ac.png)
+
+3. Here we initialise the pSet variable and set te value of MAX to a parameter maxIn sent to the constructor. 
+
+![image](https://user-images.githubusercontent.com/77361838/157636658-62fd3a0e-4cbb-4720-a9bc-0f0883727f77.png)
+
+4. To check if the HashSet is at its maximum capacity we place a method capacity which will return a boolean value, if true then the set is full and false if not full using the Set method size() to determine if it is equal to MAX, if it is returns true, if not then false. 
+
+![image](https://user-images.githubusercontent.com/77361838/157637036-45367873-b59c-4163-9cf2-e004f6ff0e25.png)
+
+5. To get the total we will just return a int to the method simply using the same Set method size() giving us a int value of the number of objects inside the HashSet. 
+
+![image](https://user-images.githubusercontent.com/77361838/157637489-ced5ae8e-365d-4212-9b34-d71d7955fe20.png)
+
+6. Here we develop a method that returns a boolean value again, this due to the method add() reutrning either true or false, if its true then the parameter from <code>parkedCar</code> class of userIn will add the following object into the HashSet collection, if false it will not add it to the collection. 
+
+![image](https://user-images.githubusercontent.com/77361838/157638088-4f4d8c5f-a809-455d-9955-d39df72d64af.png)
+
+7. To remove the car from the <code>parkedCarList</code> HashSet collection we create another boolean method, if it returns true then the following object will be removed, if false then it will not. First we must make a parameter which is extended to <code>parkedCar</code> class with the variable being userID, then we create a boolean value to see if the userID given too the parameter is in the HashSet collection, if it is then it will return the findP variable to be true and false if not found in the collection. 
+We then initiate a if statement where the condition is that findP is equal to true, if it is true meaning that the ID is inside the collection then it will use the HashSet method remove to delete the object from the collection, if the condition is not equal to true and is false then it will not delete the following object as it doesnt exist in the collection. 
+
+8. We also include a toString method for unit testing which is overridden so we can print it easily in our test file. 
 
 
 
