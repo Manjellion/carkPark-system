@@ -14,3 +14,7 @@ The system must be able to provide a series of reports, for example indication w
 3. System should provide a series of reports:
   - List of registered vechiles
   - List of parked cars currently at the time
+
+## The Design
+
+![image](https://user-images.githubusercontent.com/77361838/157608715-84a8d5ab-2dbb-4967-ab97-aded34a515f3.png)
