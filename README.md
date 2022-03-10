@@ -53,6 +53,6 @@ This will display the expected output:<br>
 <code>Name: Manjil</code><br>
 <code>ID: 1</code><br>
 <code>Registerd: Car is registered in the system</code><br>
-<code>(The car owner Manjil, 1, Car is registered in the system</code><br>
+<code>(The car owner Manjil, 1, Car is registered in the system)</code><br>
 
 
