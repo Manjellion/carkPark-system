@@ -15,6 +15,15 @@ The system must be able to provide a series of reports, for example indication w
   - List of registered vechiles
   - List of parked cars currently at the time
 
-## The Design
+# The Design
+
+The two core classes for the system is registeredCar and parkedCar
+  - registeredCar & parkedCar -> these classes will store data inputed by the users into a collection class as an array list.
+
+## Instance 
+
+The instance of the registeredCar class and instance of parkedCar will be held in seprate class collections, registeredCarList and parkedCarList;
+  - Both collection classes are stored in a Array HashMap -> This is because if users have similar name it can be stored and also be sorted with a unique ID.
+The report class within the Main Menu class will hold both of the collection classes along with a class to see reports.
 
 ![image](https://user-images.githubusercontent.com/77361838/157608715-84a8d5ab-2dbb-4967-ab97-aded34a515f3.png)
