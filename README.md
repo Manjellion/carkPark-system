@@ -60,7 +60,7 @@ This will display the expected output:<br>
 When making a collection class we must think of the most suitable, for <code>parkedCarList</code> the most suitable was set and heres why:
 
   - There is no specific order of the elements(Cars).
-  - Each car acn be in the parking only once.
+  - Each car can be in the parking only once.
   - Set doesnt allow duplication so users with same ID cannot enter at the same time, removes confusion, tresspassing and identity theft.
 Here some reasons why other Java Data strucutres such as List, Queue and Stack are not required here:
   - List: Ordering of elements is not userful here and duplication ignores the principles above.
