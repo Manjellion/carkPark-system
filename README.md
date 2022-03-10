@@ -47,7 +47,7 @@ Before we embed this into a larger program we need to test this first too see if
 To start this we implement a separate file and create a class specifically for testing the class we want too. Inside the test class will contain a main method that will act as a <code>Driver</code> for the class we are tesing, in this instance the <code>parkedCar</code> class.
 We create and object which then allows us to test and call in the methods, when we are tesing the class by generating objects and calling method, we wanted to display the result on the screen such as data stored inside the object, we can access the data by calling the appropriate methods.
 
-![image](https://user-images.githubusercontent.com/77361838/157615207-71ba762c-5d2e-4154-9c77-e372ea49f945.png)
+![image](https://user-images.githubusercontent.com/77361838/157619513-7330e33f-ed12-470d-b5ef-290525b37eef.png)
 
 This will display the expected output:<br>
 <code>Name: Manjil</code><br>
