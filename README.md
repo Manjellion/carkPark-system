@@ -26,4 +26,5 @@ The instance of the registeredCar class and instance of parkedCar will be held i
   - Both collection classes are stored in a Array HashMap -> This is because if users have similar name it can be stored and also be sorted with a unique ID.
 The report class within the Main Menu class will hold both of the collection classes along with a class to see reports.
 
+## UML(Unified Modeling Language) Diagram
 ![image](https://user-images.githubusercontent.com/77361838/157608715-84a8d5ab-2dbb-4967-ab97-aded34a515f3.png)
