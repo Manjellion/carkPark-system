@@ -23,13 +23,13 @@ The two core classes for the system is registeredCar and parkedCar
 ## Instance 
 
 The instance of the registeredCar class and instance of parkedCar will be held in seprate class collections, registeredCarList and parkedCarList;
-  - Both collection classes are stored in a Array HashMap -> This is because if users have similar name it can be stored and also be sorted with a unique ID.
+  - Both collection classes are stored in a Array set Data Structure (Will be explained why in 3.2) -> This is because if users have similar name it can be stored and also be sorted with a unique ID.
 The report class within the Main Menu class will hold both of the collection classes along with a class to see reports.
 
 ## UML (Unified Modeling Language) Diagram
 ![image](https://user-images.githubusercontent.com/77361838/157608715-84a8d5ab-2dbb-4967-ab97-aded34a515f3.png)
 
-# 3. Implementing the <i>parkedCar</i> Class
+# 3.1 Implementing the <i>parkedCar</i> Class
 
 The programming language we are using to implement this deisgn is Java, the object oriented language allows us access too concepts including abstraction, encapsulation, inheritance and polymorphism which will later be shown, we will also head into GUI (Graphical User Interface) using JavaFX and also Java Data Structure such as List, Set, Queue and HashMap.
 So throughout the implementation;
@@ -54,5 +54,22 @@ This will display the expected output:<br>
 <code>ID: 1</code><br>
 <code>Registerd: Car is registered in the system</code><br>
 <code>(The car owner Manjil, 1, Car is registered in the system)</code><br>
+
+## 3.2 The <code>parkedCarList</code> Class
+
+When making a collection class we must think of the most suitable, for <code>parkedCarList</code> the most suitable was set and heres why:
+
+  - There is no specific order of the elements(Cars).
+  - Each car acn be in the parking only once.
+  - Set doesnt allow duplication so users with same ID cannot enter at the same time, removes confusion, tresspassing and identity theft.
+Here some reasons why other Java Data strucutres such as List, Queue and Stack are not required here:
+  - List: Ordering of elements is not userful here and duplication ignores the principles above.
+  - Queue: Next element to be deleted is not necessarily the first that has been added.
+  - Stack: Next element to be deleted is typicaly not the last that has been added.
+
+For our <code>parkedCarList</code> we also inclded a constant MAX allowing us to record a maximum number of records we would like in our set data strucuture, As max is a constant type its a <code>+</code> symbol given public visibility. 
+
+
+
 
 
