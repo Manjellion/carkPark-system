@@ -15,7 +15,7 @@ The system must be able to provide a series of reports, for example indication w
   - List of registered vechiles
   - List of parked cars currently at the time
 
-# The Design
+# 2. The Design
 
 The two core classes for the system is registeredCar and parkedCar
   - registeredCar & parkedCar -> these classes will store data inputed by the users into a collection class as an array list.
