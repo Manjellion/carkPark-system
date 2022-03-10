@@ -32,4 +32,6 @@ The report class within the Main Menu class will hold both of the collection cla
 # 3. Implementing the <i>parkedCar</i> Class
 
 The programming language we are using to implement this deisgn is Java, the object oriented language allows us access too concepts including abstraction, encapsulation, inheritance and polymorphism which will later be shown, we will also head into GUI (Graphical User Interface) using JavaFX and also Java Data Structure such as List, Set, Queue and HashMap.
-Throughout this case study we will be using the <code>Javadoc</code> style of comments which will document our classes.
+So throughout the implementation;
+  - Throughout this case study we will be using the <code>Javadoc</code> style of comments which will document our classes.
+  - The code for the <code>parkedCar</code> Class is shown below
