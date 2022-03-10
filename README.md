@@ -1,6 +1,6 @@
 # Cark Park System (Java)
  
-#1. Analysis & Specification
+# 1. Analysis & Specification
 - Implement a car parking system that records which cars are currently parked in the car park. 
 - Only registered cars must be allowed to enter the car park so the system must be able to keep a list of authorized vechiles (name of the owners) as well as thoose actually parked at the particular time.
 
