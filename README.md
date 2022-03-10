@@ -28,3 +28,8 @@ The report class within the Main Menu class will hold both of the collection cla
 
 ## UML (Unified Modeling Language) Diagram
 ![image](https://user-images.githubusercontent.com/77361838/157608715-84a8d5ab-2dbb-4967-ab97-aded34a515f3.png)
+
+# 3. Implementing the <i>parkedCar</i> Class
+
+The programming language we are using to implement this deisgn is Java, the object oriented language allows us access too concepts including abstraction, encapsulation, inheritance and polymorphism which will later be shown, we will also head into GUI (Graphical User Interface) using JavaFX and also Java Data Structure such as List, Set, Queue and HashMap.
+Throughout this case study we will be using the <code>Javadoc</code> style of comments which will document our classes.
