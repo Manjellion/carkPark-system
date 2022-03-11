@@ -108,7 +108,7 @@ We then initiate a if statement where the condition is that findP is equal to tr
 
 8. We also include a toString method for unit testing which is overridden so we can print it easily in our test file. 
 
-
+## 3.3 Testing the <code>parkedCarList</code> Class
 
 
 
