@@ -106,9 +106,21 @@ Below there is the code for parkedCarList:
 7. To remove the car from the <code>parkedCarList</code> HashSet collection we create another boolean method, if it returns true then the following object will be removed, if false then it will not. First we must make a parameter which is extended to <code>parkedCar</code> class with the variable being userID, then we create a boolean value to see if the userID given too the parameter is in the HashSet collection, if it is then it will return the findP variable to be true and false if not found in the collection. 
 We then initiate a if statement where the condition is that findP is equal to true, if it is true meaning that the ID is inside the collection then it will use the HashSet method remove to delete the object from the collection, if the condition is not equal to true and is false then it will not delete the following object as it doesnt exist in the collection. 
 
-8. We also include a toString method for unit testing which is overridden so we can print it easily in our test file. 
+8. We also include a toString method for testing which is overridden so we can print it easily in our test file. 
 
 ## 3.3 Testing the <code>parkedCarList</code> Class
 
+It is important to test classes to ensure that they function correctly before moving on to the rest of the implementation on the development. Where parkedCar was a form of unit testing, parkedCarList is an example of integration testing as it working in conjuction with the parkedCar Class, where we test parkedCarList methods. 
+Here are some method to test our parkedCarList:
+  - limit the size of the class to a small number like 4 using the MAX in the constructor
+  - add two parkedCar objects to the set using addCarToPark() method
+  - display the HashSet using toString() method to check if its successfully been added
+  - check too see if the capacity() method returns false, as there shouldnt be 4, add 4 objects to see if it returns true also
+  - display the total number of cars currently parked using getTotal() method
+  - add another object too see if the set doesnt add anymore than its max
+This test strategy will test if each of the methods in parkedCarList class passes or fails, if pass then its successfull, if fail we find the reason to the failure and debug this.
 
+## 3.4 Test log for parkedCarList Class
+
+The driver for this system will be menu driven program, one possible drive we used developed in order to process the actions given in this tes log: 
 
