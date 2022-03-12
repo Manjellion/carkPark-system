@@ -1,3 +1,8 @@
+package tests;
+
+import src.parkedCar;
+import src.parkedCarList;
+
 public class carParkedTester {
     public static void main(String[] args) {
         // test create an object

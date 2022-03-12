@@ -1,6 +1,9 @@
+package tests;
 import java.util.Scanner;
 
-import javax.lang.model.type.NullType;
+import src.EasyScanner;
+import src.parkedCar;
+import src.parkedCarList;
 
 public class carParkedListTester {
     public static void main(String[] args) {
