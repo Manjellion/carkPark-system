@@ -157,14 +157,14 @@ Below is the code for parkedCar class:
 
 ## 3.7 Implementing the parkedCarList Class
 
-The parkedCarList class is a collection class to hold our parkedCar objects. We will again use an ArrayList to store the collection being a HashSet again and have a MAX constant to fix an upper limit on the number of cars our parking space can have. This will be a mirror of the registeredList as the methods we use will be similar, however there are two methods that stand out being the leaveCarPark() and search() method.
+The parkedCarList class is a collection class to hold our parkedCar objects. We will again use an ArrayList to store the collection being a ArrayList this time as we need the index keys in the data strucutre to be ordered so we can use the get() method, and have a MAX constant to fix an upper limit on the number of cars our parking space can have. This will be a mirror of the registeredList as the methods we use will be similar, however there are two methods that stand out being the leaveCarPark() and search() method.
 
 ### 3.7.1 Search() Method
 The algorithm we will use to search this data structure will be a linear search as we will just scan from beginning to end resulting the time complexity to be linear time. 
 
 Here is a suitable algorithm to find a car object in pseudocode:
 
-LOOP FROM first parkedCar in set TO last parkedCar in set <br>
+LOOP FROM first parkedCar in list TO last parkedCar in list <br>
 BEGIN <br>
      IF current parkedCar ID to locate <br>
      BEGIN <br>
@@ -172,5 +172,11 @@ BEGIN <br>
      END <br>
 END <br>
 return null <br>
+
+### 3.7.2 leaveCarPark()
+Here the integer parameter represents the ID number of the carParked object that is to be removed (null will be returned if no such parkedCar object exists in the list). If the parkedCar object does exist then it can be removed from the list using the leaveCarPark() method, the following method within in ArrayList called remove(), also a boolean value of true can be returned, where otherwise false is returned. 
+
+Here is the code for parkedCarList class: 
+
 
 
