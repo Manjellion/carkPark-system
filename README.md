@@ -124,3 +124,19 @@ This test strategy will test if each of the methods in parkedCarList class passe
 
 The driver for this system will be menu driven program, one possible drive we used developed in order to process the actions given in this tes log: 
 
+![image](https://user-images.githubusercontent.com/77361838/158152312-ec57eafe-9d4b-44cd-bebc-f59f6b5352de.png)
+
+Our EasyScanner class is being used in this tester for ease of scanner system input and keyboard input, this is the output in the terminal when setting a max value to our HashSet;
+
+![image](https://user-images.githubusercontent.com/77361838/158153022-9b961c06-c7e7-435f-b6bd-3a39149e8c80.png)
+We input 5 where it will be scored inside our easyscanner variable to be stored as our maximum number of value's permitted.
+
+Similary the output for objects will result in for toString() method;
+<code>[(The car owner Manjil, 1, Car is registered in the System)]</code>
+
+When the terminal is outputing unexpected results during the tesing, you should stop and identify the cause of the error in the class that you are testing, documenting the the error and the steps you took to fix it is also important, logging these data can help with maintaining the code and reference to peers when they review your code. 
+
+
+
+
+
