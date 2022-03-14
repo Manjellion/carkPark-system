@@ -1,12 +1,12 @@
 package src;
-public class parkedCar {
+public class registered {
 
     private String carUser;
     private int carUserID;
     private boolean carRegistered;
     
     // Constructor created for the class to create object 
-    public parkedCar(String carUserName, int carIDinput, boolean carRegtistertration) {
+    public registered(String carUserName, int carIDinput, boolean carRegtistertration) {
         carUser = carUserName;
         carUserID = carIDinput;
         carRegistered = carRegtistertration;
@@ -34,6 +34,6 @@ public class parkedCar {
     // overriden method to print out the following String when called
     @Override
      public String toString() {
-         return "(The car owner " + carUser + ", " + carUserID + ", " + registered(carRegistered);
+         return "(The car owner " + carUser + ", " + carUserID + ", " + registered(carRegistered) + ")";
      }
 }

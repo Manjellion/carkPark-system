@@ -1,16 +1,16 @@
 package src;
 import java.util.*;
 
-public class parkedCarList {
+public class registeredList {
     
-    private Set<parkedCar> pSet;
+    private Set<registered> pSet;
     public final int MAX;
 
     /** Constructor initialises the empty parkedCar set and sets the maximum set size, esentially the maximum capacity of the car park
      *  @param  maxIn: The maximum number of cars parked in the set
      */
 
-     public parkedCarList(int maxIn) {
+     public registeredList(int maxIn) {
         pSet = new HashSet<>();
          MAX = maxIn;
      }
@@ -26,7 +26,7 @@ public class parkedCarList {
      }
 
      // Add a new Car object to the set
-     public boolean addCarToPark(parkedCar userIn) {
+     public boolean addCarToPark(registered userIn) {
         if(!capacity()) {
             pSet.add(userIn);
             return true;
@@ -36,7 +36,7 @@ public class parkedCarList {
      }
      
      // Remove the car user in the given user ID, userID is the ID given by the user and we will use as parameter to remove car user, if it returns true then it will remove succesfully or false otherwise.
-     public boolean removeCarToPark(parkedCar userID) {
+     public boolean removeCarToPark(registered userID) {
          boolean findP = pSet.contains(userID);
          // check if car user is found at the given user ID
          if (findP == true) {
