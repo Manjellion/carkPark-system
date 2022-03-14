@@ -1,4 +1,5 @@
 package src;
+// Class used to identify the records of the car registered 
 public class registered {
 
     private String carUser;
