@@ -29,7 +29,7 @@ The report class within the Main Menu class will hold both of the collection cla
 ## UML (Unified Modeling Language) Diagram
 ![image](https://user-images.githubusercontent.com/77361838/158159316-21f620bf-e2a2-4f08-b78b-11cb045ca25f.png)
 
-# 3.1 Implementing the <i>parkedCar</i> Class
+# 3.1 Implementing the <i>registered</i> Class
 
 The programming language we are using to implement this deisgn is Java, the object oriented language allows us access too concepts including abstraction, encapsulation, inheritance and polymorphism which will later be shown, we will also head into GUI (Graphical User Interface) using JavaFX and also Java Data Structure such as List, Set, Queue and HashMap.
 So throughout the implementation;
@@ -55,7 +55,7 @@ This will display the expected output:<br>
 <code>Registerd: Car is registered in the system</code><br>
 <code>(The car owner Manjil, 1, Car is registered in the system)</code><br>
 
-## 3.2 The <code>parkedCarList</code> Class
+## 3.2 The <code>registeredList</code> Class
 
 When making a collection class we must think of the most suitable, for <code>parkedCarList</code> the most suitable was set (specifically HashSet) and heres why:
 
@@ -108,7 +108,7 @@ We then initiate a if statement where the condition is that findP is equal to tr
 
 8. We also include a toString method for testing which is overridden so we can print it easily in our test file. 
 
-## 3.3 Testing the <code>parkedCarList</code> Class
+## 3.3 Testing the <code>registeredList</code> Class
 
 It is important to test classes to ensure that they function correctly before moving on to the rest of the implementation on the development. Where parkedCar was a form of unit testing, parkedCarList is an example of integration testing as it working in conjuction with the parkedCar Class, where we test parkedCarList methods. 
 Here are some method to test our parkedCarList:
@@ -120,7 +120,7 @@ Here are some method to test our parkedCarList:
   - add another object too see if the set doesnt add anymore than its max
 This test strategy will test if each of the methods in parkedCarList class passes or fails, if pass then its successfull, if fail we find the reason to the failure and debug this.
 
-## 3.4 Test log for parkedCarList Class
+## 3.4 Test log for registeredList Class
 
 The driver for this system will be menu driven program, one possible drive we used developed in order to process the actions given in this tes log: 
 
@@ -139,15 +139,38 @@ Similary the output for objects will result in for toString() method;
 
 When the terminal is outputing unexpected results during the tesing, you should stop and identify the cause of the error in the class that you are testing, documenting the the error and the steps you took to fix it is also important, logging these data can help with maintaining the code and reference to peers when they review your code. 
 
-## 3.4 Implementing the Tenant Class
+## 3.5 Implementing the parkedCar Class
 
 From our UML diagram from figure 1, the registeredClass contains the attributes;
-  - CarUser: String, Double;
+  - userName: String;
+  - useID: Int;
   - registered: boolean;
   - MAX  .
-and method such as toString();
 
+First two of these represents the CarUser and registered, CarUser takes in two types of parameters to identify the the registered Car, the String value is the given name from registered Class where we took it in the variable <code>carUser</code> and also <code>carUserID</code> which will be the unique Integer value ID of the car(object).These will implemented using the <code>registeredList</code> object, this will also be used for the second attribute registered which will return a boolean. Finally our last attribute <code>MAX</code> is to be implemented as a static class attribute. The MAX attribute will also be implemented as a constant as we are assuming that the number of cars allowed to park is a fixed number. Since it cannot be modified we can make this method declared public.
 
+Below is the code for parkedCar class:
 
+![image](https://user-images.githubusercontent.com/77361838/158253999-db44aa99-deed-4724-b784-39c26a741c75.png)
+
+## 3.6 Testing parkedCar Class
+
+## 3.7 Implementing the parkedCarList Class
+
+The parkedCarList class is a collection class to hold our parkedCar objects. We will again use an ArrayList to store the collection being a HashSet again and have a MAX constant to fix an upper limit on the number of cars our parking space can have. This will be a mirror of the registeredList as the methods we use will be similar, however there are two methods that stand out being the leaveCarPark() and search() method.
+
+### 3.7.1 Search() Method
+The algorithm we will use to search this data structure will be a linear search as we will just scan from beginning to end resulting the time complexity to be linear time. 
+
+Here is a suitable algorithm to find a car object in pseudocode:
+
+LOOP FROM first parkedCar in set TO last parkedCar in set <br>
+BEGIN <br>
+     IF current parkedCar ID to locate <br>
+     BEGIN <br>
+        return current parkedCar <br>
+     END <br>
+END <br>
+return null <br>
 
 
