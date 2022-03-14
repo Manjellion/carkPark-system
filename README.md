@@ -27,7 +27,7 @@ The instance of the registeredCar class and instance of parkedCar will be held i
 The report class within the Main Menu class will hold both of the collection classes along with a class to see reports.
 
 ## UML (Unified Modeling Language) Diagram
-![image](https://user-images.githubusercontent.com/77361838/157608715-84a8d5ab-2dbb-4967-ab97-aded34a515f3.png)
+![image](https://user-images.githubusercontent.com/77361838/158159316-21f620bf-e2a2-4f08-b78b-11cb045ca25f.png)
 
 # 3.1 Implementing the <i>parkedCar</i> Class
 
@@ -128,13 +128,24 @@ The driver for this system will be menu driven program, one possible drive we us
 
 Our EasyScanner class is being used in this tester for ease of scanner system input and keyboard input, this is the output in the terminal when setting a max value to our HashSet;
 
-![image](https://user-images.githubusercontent.com/77361838/158153022-9b961c06-c7e7-435f-b6bd-3a39149e8c80.png)
+![image](https://user-images.githubusercontent.com/77361838/158153022-9b961c06-c7e7-435f-b6bd-3a39149e8c80.png) 
+
 We input 5 where it will be scored inside our easyscanner variable to be stored as our maximum number of value's permitted.
 
 Similary the output for objects will result in for toString() method;
+
 <code>[(The car owner Manjil, 1, Car is registered in the System)]</code>
 
+
 When the terminal is outputing unexpected results during the tesing, you should stop and identify the cause of the error in the class that you are testing, documenting the the error and the steps you took to fix it is also important, logging these data can help with maintaining the code and reference to peers when they review your code. 
+
+## 3.4 Implementing the Tenant Class
+
+From our UML diagram from figure 1, the registeredClass contains the attributes;
+  - CarUser: String, Double;
+  - registered: boolean;
+  - MAX  .
+and method such as toString();
 
 
 
