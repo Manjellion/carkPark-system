@@ -4,20 +4,19 @@ public class parkedCar {
 
     private String userName;
     private int userID;
-    private registeredList registered; 
-    public static final int MAX = 20;
+    private registered registered; 
 
     // Constructor initialises the CarUser which is using the class registered to get the userName and userID
 
-    public parkedCar(String nameIn, int idIn) {
+    public parkedCar(String nameIn, int idIn, registered regIn) {
         userName = nameIn;
         userID = idIn;
-        registered = new registeredList(MAX);
+        registered = regIn;
     }
 
     // Records the details the user made to see if the car is registered
-    public boolean addToCarPark(registered addCarIn) {
-        return registered.addCarToPark(addCarIn); // return boolean so the method can be called in registeredList
+    public Boolean checkCarRegistered(src.registered isRegisteredCar) {
+        return registered.registeredCar(); // return boolean so the method can be called in registeredList
     }
 
     // Reads the name of the car user
@@ -28,11 +27,6 @@ public class parkedCar {
     // Reads the ID of the car user 
     public int getID() {
         return userID;
-    }
-
-    // Returns if the car is registered or not
-    public registeredList getRegistration() {
-        return registered;
     }
 
     // Get a print of the user 

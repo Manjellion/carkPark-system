@@ -14,7 +14,7 @@ public class registered {
     }
     
     // get the car user name
-    public String carUser() {
+    public String carUserName() {
         return carUser;
     }
 
@@ -24,17 +24,21 @@ public class registered {
     }   
 
     // get the car users registration and clarify if its in the system or not
-    public String registered(boolean carRegtistertration) {
-        if(carRegtistertration == true) {
-            return "Car is registered in the System";
+    public boolean registeredCar() {
+        if(carRegistered == true) {
+            return true;
         } else {
-            return "Car is not registered in the system";
+            return false;
         } 
     }   
 
     // overriden method to print out the following String when called
     @Override
      public String toString() {
-         return "(The car owner " + carUser + ", " + carUserID + ", " + registered(carRegistered) + ")";
+         return "(The car owner " + carUser + ", " + carUserID + ", " + registeredCar() + ")";
      }
+
+    public static boolean addCarToPark(registered addCarIn) {
+        return false;
+    }
 }

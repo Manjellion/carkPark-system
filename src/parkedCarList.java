@@ -42,7 +42,7 @@ public class parkedCarList {
         return null; // no parkedCar object found with given ID
     }
 
-    // Reads the parkedCar object at the given position in the HashSet
+    // Reads the parkedCar object at the given position in the array
     public parkedCar getParkedCar(int positionIn) {
         // check for valid position
         if (positionIn < 1 || positionIn > getTotal()) {
