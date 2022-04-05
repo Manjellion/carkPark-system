@@ -52,5 +52,7 @@ public class parkedCarListTester {
         System.out.println(parkingSystem.isEmpty());
         // This should return true as the size of the array does = to the max capacity of 4
         System.out.println(parkingSystem.isFull());
+        // Total should now be 4 as we added 4 objects to the collection
+        System.out.println(parkingSystem.getTotal());
     }
 }
