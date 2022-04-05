@@ -32,6 +32,6 @@ public class parkedCar {
     // Get a print of the user 
     @Override
     public String toString() {
-        return userName = ", " + userID + ", " + registered; 
+        return userName + ", " + userID + ", " + registered; 
     }
 }
