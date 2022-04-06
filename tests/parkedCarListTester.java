@@ -6,19 +6,19 @@ import src.registered;
 
 public class parkedCarListTester {
     public static void main(String[] args) {
-        registered isRegisteredCar1 = new registered("Manjil", 0001, true);
-        registered notRegisteredCar2 = new registered("Nikita", 0002, false);
-        registered isRegisteredCar3 = new registered("Ceelo", 0003, true);
-        registered notRegisteredCar4 = new registered("Chris", 0004, false);
+        registered isRegisteredCar1 = new registered(true);
+        registered notRegisteredCar2 = new registered(false);
+        registered isRegisteredCar3 = new registered(true);
+        registered notRegisteredCar4 = new registered(false);
 
         // registered Car
-        parkedCar user1 = new parkedCar(isRegisteredCar1.carUserName(), isRegisteredCar1.carUserId(), isRegisteredCar1);
+        parkedCar user1 = new parkedCar("Manjil", 1, isRegisteredCar1);
         // not registered Car
-        parkedCar user2 = new parkedCar(notRegisteredCar2.carUserName(), notRegisteredCar2.carUserId(), notRegisteredCar2);
+        parkedCar user2 = new parkedCar("Nikita", 2, notRegisteredCar2);
          // registered Car
-         parkedCar user3 = new parkedCar(isRegisteredCar3.carUserName(), isRegisteredCar3.carUserId(), isRegisteredCar3);
+         parkedCar user3 = new parkedCar("David", 3, isRegisteredCar3);
          // not registered Car
-         parkedCar user4 = new parkedCar(notRegisteredCar4.carUserName(), notRegisteredCar4.carUserId(), notRegisteredCar4);
+         parkedCar user4 = new parkedCar("Ceelo", 4, notRegisteredCar4);
         
         parkedCarList parkingSystem = new parkedCarList(4);
 

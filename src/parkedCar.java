@@ -15,8 +15,8 @@ public class parkedCar {
     }
 
     // Records the details the user made to see if the car is registered
-    public Boolean checkCarRegistered(src.registered isRegisteredCar) {
-        return registered.registeredCar(); // return boolean so the method can be called in registeredList
+    public Boolean checkCarRegistered() {
+        return registered.getRegistered(); // return boolean so the method can be called in registeredList
     }
 
     // Reads the name of the car user

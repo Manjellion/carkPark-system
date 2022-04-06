@@ -31,6 +31,10 @@ public class parkedCarList {
         } else return false; // no parkedCar object is remvoed
     }
 
+    public boolean checkCarRegistered(parkedCar checker) {
+        return checker.checkCarRegistered();
+    }
+
     // Search for the parkedCar object using the ID given
     public parkedCar search(int ID) {
         for(parkedCar currentParkedCar : parkedList) {
