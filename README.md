@@ -178,5 +178,9 @@ Here the integer parameter represents the ID number of the carParked object that
 
 Here is the code for parkedCarList class: 
 
+Creating new object & setting up test
+
+{ Objects creating code }
+
 
 
