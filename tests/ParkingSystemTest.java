@@ -42,10 +42,10 @@ public class ParkingSystemTest {
                     break;
                 case '2': leaveHandler(parkingSpace, list);
                     break;
-                //case '3': isFullHandler(parkingSpace, list);
-                //    break;
-                //case '4': getTotalHandler(parkingSpace, list);
-                //    break;
+                case '3': isFullHandler(parkingSpace, list);
+                    break;
+                case '4': getTotalHandler(list);
+                    break;
                 //case '5': checkRegisteredHandler(parkingSpace, list);
                 //    break;
                 //case '6': listParkedCarHandler(parkingSpace, list);
@@ -79,7 +79,7 @@ public class ParkingSystemTest {
             registered = false;
         }
 
-        registered registerCheck = new registered(name, ID, registered);
+        registered registerCheck = new registered(registered);
 
         if(list.getTotal() < 1 || list.getTotal() > noOfSpaceIn) {
             int totalSpaceLeft = noOfSpaceIn - list.getTotal();
@@ -104,5 +104,34 @@ public class ParkingSystemTest {
         }
     }
 
+    static void isFullHandler(int noOfSpaceIn, parkedCarList listIn) {
+        int parkSpaceLeft = noOfSpaceIn - listIn.getTotal();
+        if(listIn.getTotal() == noOfSpaceIn) {
+            System.out.println("There are no parking space as it has reached max of " + noOfSpaceIn);
+        } else {
+            System.out.println("Car park is not full, there are " + parkSpaceLeft + " left in the car park." );
+        }
+    }
+
+    static int getTotalHandler(parkedCarList listIn) {
+        return listIn.getTotal();
+    }
+    
+    static void checkRegisteredHandler(parkedCarList listIn) {
+        System.out.println("Enter the given ID for car: ");
+        int userID = EasyScanner.nextInt();
+
+        parkedCar currentObj = listIn.search(userID);
+
+        if(listIn.search(userID) == null) {
+            System.out.println("Car ID doesnt exist");
+        } else {
+            if(currentObj.checkCarRegistered() == true) {
+                System.out.println("The given Car ID "+ userID + "is currently registered");
+            } else if(currentObj.checkCarRegistered() == false) {
+                System.out.println("The given Car ID " + userID + " is not registered in our system.");
+            }
+        }
+    }
 
 }
