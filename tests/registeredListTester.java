@@ -59,7 +59,7 @@ public class registeredListTester {
         Scanner sc = new Scanner(System.in);
         boolean regis = sc.nextBoolean();
         // create a car objectto set
-        registered user = new registered(name, ID, regis);
+        registered user = new registered(regis);
         // attempt to add the car to the set, if the park isnt full then it will go through as true, if false then the statement will reutrn below. 
         boolean info_correct = listIn.addCarToPark(user);
         if(!info_correct) System.out.println("ERROR: the parking spaces are full");
@@ -82,7 +82,7 @@ public class registeredListTester {
         Scanner sc = new Scanner(System.in);
         boolean regis = sc.nextBoolean();
         // create a car objectto set
-        registered user = new registered(name, ID, regis);
+        registered user = new registered(regis);
 
         boolean info = listIn.removeCarToPark(user);
         if(!info) System.out.println("ERROR: incorrect info placed, car will not be removed");

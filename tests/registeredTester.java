@@ -7,12 +7,12 @@ public class registeredTester {
     public static void main(String[] args) {
         // test create an object
         registeredList user1 = new registeredList(4);
-        registered user1Test = new registered("Manjil", 1, true);
-        registered user2Test = new registered("Nike", 2, false);
-        registered user3Test = new registered("Chris", 3, false);
-        registered user4Test = new registered("Cole", 4, true);
-        registered user5Test = new registered("Dean", 5, false);
-        registered user6Test = new registered("Paul", 6, true);
+        registered user1Test = new registered(true);
+        registered user2Test = new registered(false);
+        registered user3Test = new registered(false);
+        registered user4Test = new registered(true);
+        registered user5Test = new registered(false);
+        registered user6Test = new registered(true);
 
 
         user1.addCarToPark(user1Test);
