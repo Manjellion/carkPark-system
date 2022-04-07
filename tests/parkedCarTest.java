@@ -1,18 +1,12 @@
 package tests;
-
 import src.parkedCar;
-import src.registered;
 
 public class parkedCarTest {
     public static void main(String[] args) {
-        
-        registered isRegisteredCar = new registered(true);
-        registered notRegisteredCar = new registered(false);
-
         // registered Car
-        parkedCar user1 = new parkedCar("Manjil", 1 ,isRegisteredCar);
+        parkedCar user1 = new parkedCar("Manjil", 1, true);
         // not registered Car
-        parkedCar user2 = new parkedCar("Nikita", 2, notRegisteredCar);
+        parkedCar user2 = new parkedCar("Nikita", 2, false);
         System.out.println(user1.getName());
         System.out.println(user1.getID());
 

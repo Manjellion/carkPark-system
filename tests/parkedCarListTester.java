@@ -1,24 +1,18 @@
 package tests;
-
 import src.parkedCar;
 import src.parkedCarList;
-import src.registered;
 
 public class parkedCarListTester {
     public static void main(String[] args) {
-        registered isRegisteredCar1 = new registered(true);
-        registered notRegisteredCar2 = new registered(false);
-        registered isRegisteredCar3 = new registered(true);
-        registered notRegisteredCar4 = new registered(false);
 
         // registered Car
-        parkedCar user1 = new parkedCar("Manjil", 1, isRegisteredCar1);
+        parkedCar user1 = new parkedCar("Manjil", 1, true);
         // not registered Car
-        parkedCar user2 = new parkedCar("Nikita", 2, notRegisteredCar2);
+        parkedCar user2 = new parkedCar("Nikita", 2, false);
          // registered Car
-         parkedCar user3 = new parkedCar("David", 3, isRegisteredCar3);
+         parkedCar user3 = new parkedCar("David", 3, true);
          // not registered Car
-         parkedCar user4 = new parkedCar("Ceelo", 4, notRegisteredCar4);
+         parkedCar user4 = new parkedCar("Ceelo", 4, false);
         
         parkedCarList parkingSystem = new parkedCarList(4);
 

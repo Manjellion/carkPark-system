@@ -17,6 +17,7 @@ public class parkedCarFileHandler {
                 if(listIn.getParkedCar(i) != null) {
                     carWriter.writeUTF(listIn.getParkedCar(i).getName());
                     carWriter.writeInt(listIn.getParkedCar(i).getID());
+                    carWriter.writeBoolean(listIn.getParkedCar(i).getRegister());
                 }
             }
             carWriter.flush();
@@ -33,7 +34,7 @@ public class parkedCarFileHandler {
 
             String tempName = new String("");
             int tempID = 0;
-            registered registered = null;
+            boolean tempRegis = true;
             parkedCar tempParkedCar = null;
             int total = 0;
 
@@ -41,7 +42,8 @@ public class parkedCarFileHandler {
             for(int i = 1; i <= total; i++) {
                 tempName = carReader.readUTF();
                 tempID = carReader.readInt();
-                tempParkedCar = new parkedCar(tempName, tempID, registered);
+                tempRegis = carReader.readBoolean();
+                tempParkedCar = new parkedCar(tempName, tempID, tempRegis);
                 listIn.addParkedCar(tempParkedCar);
             }
             carReader.close();

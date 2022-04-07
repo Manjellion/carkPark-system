@@ -51,10 +51,6 @@ public class registeredListTester {
     // Add 
     static void option1(registeredList listIn) {
         // make a prompt for car user details
-        System.out.println("Enter name: ");
-        String name = EasyScanner.nextString();
-        System.out.println("Enter 4 digit ID: ");
-        int ID = EasyScanner.nextInt();
         System.out.println("Do you have registration (True or False): ");
         Scanner sc = new Scanner(System.in);
         boolean regis = sc.nextBoolean();
@@ -75,9 +71,7 @@ public class registeredListTester {
     static void option3(registeredList listIn) {
         System.out.println("ENTER DETAILS OF THE CAR YOU WANT TO REMOVE");
         System.out.println("Enter the name of the car you want to remove: ");
-        String name = EasyScanner.nextString();
         System.out.println("Enter 4 digit ID of the car you want to remove: ");
-        int ID = EasyScanner.nextInt();
         System.out.println("Does the car you want to move have registration (True or False): ");
         Scanner sc = new Scanner(System.in);
         boolean regis = sc.nextBoolean();
@@ -89,7 +83,7 @@ public class registeredListTester {
     }
     // GET TOTAL
     static void option4(registeredList listIn) {
-        System.out.println("TOTAL NUMBER OF PAYMENTS ENTERED: ");
+        System.out.println("TOTAL NUMBER ENTERED: ");
         System.out.println(listIn.getTotal());
     }
     // IS FULL
