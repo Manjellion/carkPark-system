@@ -59,7 +59,6 @@ public class ParkingSystemTest {
     }
 
     // Here we will implement the methods used in our parkedCar & registered classes into the handler methods in the case
-    // the tempRegis is return false all the time
     static void addHandler(int noOfSpaceIn, parkedCarList listIn) {
         System.out.println("Enter name: ");
         String name = EasyScanner.nextString();
@@ -92,7 +91,6 @@ public class ParkingSystemTest {
         }
 
         regis = tempRegis;
-        System.out.println(regis);
         parkedCar carObj = new parkedCar(name, userID, regis);
 
         if(listIn.isFull()) {
@@ -122,7 +120,7 @@ public class ParkingSystemTest {
 
     static void isFullHandler(int noOfSpaceIn, parkedCarList listIn) {
         int parkSpaceLeft = noOfSpaceIn - listIn.getTotal();
-        if(listIn.getTotal() == noOfSpaceIn) {
+        if(listIn.getTotal() <= noOfSpaceIn) { // Check if there is any space
             System.out.println("There are no parking space as it has reached max of " + noOfSpaceIn);
         } else {
             System.out.println("Car park is not full, there are " + parkSpaceLeft + " left in the car park." );
@@ -130,7 +128,7 @@ public class ParkingSystemTest {
     }
 
     static void getTotalHandler(parkedCarList listIn) {
-        System.out.println("There are " + listIn.getTotal() + " cars in total in the car park.");;
+        System.out.println("There are " + listIn.getTotal() + " cars in total in the car park."); 
     }
     
     static void checkRegisteredHandler(parkedCarList listIn) {
@@ -138,7 +136,7 @@ public class ParkingSystemTest {
         int userID = EasyScanner.nextInt();
         parkedCar checkID = listIn.search(userID);
 
-        if(checkID.getID() != userID) {
+        if(checkID.getID() != userID) { // Check if ID exists
             System.out.println("Car ID doesnt exist");
         } else if(checkID.getID() == userID){
             if(checkID.checkCarRegistered() == true) {
@@ -151,7 +149,7 @@ public class ParkingSystemTest {
 
     static void listParkedCarHandler(int noOfSpaceIn ,parkedCarList listIn) {
         int i;
-        if(listIn.isEmpty()) {
+        if(listIn.isEmpty()) { // Check if there is any car objects in the list
             System.out.println("There are no cars in the car park");
         } else {
             System.out.println("List of cars currently parked: ");
@@ -166,7 +164,7 @@ public class ParkingSystemTest {
 
     static void listRegisteredHandler(int noOfSpaceIn, parkedCarList listIn) {
         int i;
-        if(listIn.isEmpty()) {
+        if(listIn.isEmpty()) { // Check if there is any car objects in the list
             System.out.println("There are no cars in the car park");
         } else {
             System.out.println("List of registered cars currently parked: ");
